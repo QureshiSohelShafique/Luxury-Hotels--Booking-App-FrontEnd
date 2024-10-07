@@ -1,6 +1,6 @@
-# BanHotel Website Repository
+# SohelHotel Website Repository
 
-Welcome to the BanHotel website repository! This project showcases the hotel’s services, rooms, and features. You can clone this repository to run it locally or modify it as per your needs.
+Welcome to the SohelHotel website repository! This project showcases the hotel’s services, rooms, and features. You can clone this repository to run it locally or modify it as per your needs.
 
 ## Table of Contents
 
@@ -25,4 +25,4 @@ To clone this repository, follow these steps:
 3. Run the following command:
 
    ```bash
-   git clone https://github.com/BanSimplified567/BanHotel.git
+   git clone https://github.com/QureshiSohelShafique/Luxury-Hotels--Booking-App-FrontEnd.git
