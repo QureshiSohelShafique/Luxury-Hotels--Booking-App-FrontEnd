@@ -1,0 +1,132 @@
+.email-overlay {
+  position: fixed;
+  /* Fixed position to cover the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /* Ensure it's on top of other elements */
+}
+
+.email-container {
+  background-color: white;
+  /* Background for the message */
+  padding: 20px;
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  /* Optional: Box shadow */
+  text-align: center;
+  /* Center text */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cl-darkBlue);
+  color: var(--cl-white);
+  padding: 3rem;
+  margin-top: 2rem;
+  gap: 2rem;
+  position: relative;
+  /* Ensure the footer is positioned relative */
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+}
+
+.footer::after {
+  content: "";
+  /* Required for the pseudo-element */
+  position: absolute;
+  top: -2rem;
+  /* Adjust this value for vertical position */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, 0) rotate(45deg);
+  /* Adjust to truly center and rotate */
+  width: 100px;
+  /* Set the width of the diamond */
+  height: 100px;
+  /* Set the height of the diamond */
+  background-color: var(--cl-darkBlue);
+  /* Change this color to your desired one */
+  z-index: -1;
+  /* Send it behind other content */
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
+}
+
+.footer-logo img {
+  filter: brightness(0) invert(1);
+}
+
+.footer-logo p {
+  font-family: var(--font-Paragraph);
+  font-size: var(--font-xm);
+}
+
+.footer-navigation,
+.footer-social,
+.footer-newsletter {
+  flex: 1;
+}
+
+.footer-newsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin: 1rem 0;
+}
+
+.footer a {
+  color: var(--cl-white);
+}
+
+.footer input {
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.footer-input {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-input {
+    flex-wrap: wrap;
+
+  }
+}
+
+.footer-button {
+  border: none;
+  border-radius: none;
+}
